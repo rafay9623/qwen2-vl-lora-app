@@ -1,13 +1,11 @@
 ---
-base_model: Qwen/Qwen2-VL-2B-Instruct
-library_name: peft
-pipeline_tag: text-generation
-tags:
-- base_model:adapter:Qwen/Qwen2-VL-2B-Instruct
-- lora
-- sft
-- transformers
-- trl
+title: Qwen2-VL LoRA
+emoji: 🪄
+colorFrom: purple
+colorTo: blue
+sdk: streamlit
+app_file: app.py
+pinned: false
 ---
 
 # Model Card for Model ID
