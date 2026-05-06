@@ -34,8 +34,8 @@ def load_model():
     # Load Adapter
     model = PeftModel.from_pretrained(model, adapter_path)
     
-    # Load Processor
-    processor = AutoProcessor.from_pretrained(adapter_path)
+    # Load Processor from base model to preserve the correct multimodal chat template
+    processor = AutoProcessor.from_pretrained(base_model_name)
     
     return model, processor, device
 
